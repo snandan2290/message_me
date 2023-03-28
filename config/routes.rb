@@ -3,4 +3,8 @@ Rails.application.routes.draw do
 
   # Defines the root path route ("/")
   # root "articles#index"
+
+  root 'chatroom#home'
+
+  get 'login', to: 'session#login'
 end
